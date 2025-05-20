@@ -3,6 +3,10 @@
 A simple responsive weather app that fetches current weather data and forecast from the OpenWeather API.  
 Built with HTML, CSS, and JavaScript.
 
+### 📸 Preview
+
+![App Screenshot](./assets/screenshot.png)
+
 ## Features
 
 - Search weather by city name
