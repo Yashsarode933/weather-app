@@ -7,13 +7,22 @@ Built with HTML, CSS, and JavaScript.
 
 ![App Screenshot](./assets/screenshot.png)
 
-## Features
+## 🚀 Features
 
-- Search weather by city name
-- Displays temperature, humidity, wind speed, and weather condition
-- Responsive design for desktop and mobile
-- Dynamic background images based on weather conditions
-- Real-time date and time display
+- 🔍 Search weather by city
+- 📍 Default weather for Mumbai on load
+- 🌤️ Real-time temperature, condition, humidity, wind
+- 📅 Live date & time
+- 🖼️ Dynamic background based on weather
+- 📱 Responsive design (mobile-friendly)
+- 📊 5-day forecast with icons
+
+## 🧪 Technologies Used
+
+- HTML5
+- CSS3 (Flexbox & Media Queries)
+- Vanilla JavaScript
+- OpenWeatherMap API
 
 ## Setup
 
