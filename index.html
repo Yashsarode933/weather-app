@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ Weather App</h1>
+    <div id="datetime" class="datetime"></div>
+    
+    <div class="input-group">
+      <input type="text" id="city-input" placeholder="Enter city name (e.g. Mumbai)" />
+      <button id="fetch-weather">Get Weather</button>
+    </div>
+
+    <div id="error-message" class="error hidden"></div>
+    
+    <div class="weather-forecast-wrapper">
+      <div id="weather-result" class="card hidden">
+        <div class="weather-info">
+          <img id="weather-icon" src="" alt="Weather icon" />
+          <div class="details">
+            <h2 id="weather-heading">Weather Info</h2>
+            <p id="temperature"></p>
+            <p id="condition"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="forecast" class="card hidden">
+        <h2>5-Day Forecast</h2>
+        <div id="forecast-container" class="forecast-grid"></div>
+      </div>
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

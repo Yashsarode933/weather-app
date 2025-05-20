@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #cbebe9, #a9d9e8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.container {
+  padding: 4rem 2rem 3rem; /* Increase top padding to 4rem or more */
+  background: rgb(223, 240, 244);
+  border-radius: 2rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 900px;
+  min-height: 400px;
+  text-align: center;
+  margin: 2rem auto;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%; /* make sure it fills container width */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+input {
+  flex: 1;
+  min-width: 0; /* Important to prevent overflow in flex */
+  padding: 0.9rem;
+  border: 2px solid #076191;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.9rem 1.3rem;
+  background: #4195e3;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #072b3f;
+}
+
+.card {
+  width: 100%; /* full width inside container */
+  box-sizing: border-box; /* respect padding inside width */
+  max-width: 100%; /* prevent overflowing parent */
+  background: #8fd9df;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.1rem;
+  margin: 0.3rem 0;
+}
+
+body.weather-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.datetime {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  #city-input {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  #fetch-weather {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .datetime {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.error {
+  color: #d9534f;
+  background-color: #f8d7da;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #f5c6cb;
+}
+
+.forecast-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.forecast-grid .day {
+  flex: 1;
+  min-width: 100px;
+  background: #eaf6fa;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  text-align: center;
+}
+
+.forecast-grid img {
+  width: 50px;
+  height: 50px;
+}
+
+.weather-forecast-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+#weather-result,
+#forecast {
+  flex: 1;
+  min-width: 300px;
+}
+
+.forecast-grid .day {
+  background: #eaf6fa;
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  text-align: center;
+  flex: 1 1 80px;
+}
+
+@media (max-width: 768px) {
+  .weather-forecast-wrapper {
+    flex-direction: column;
+  }
+  .weather-container .card {
+    flex: 1 1 100%;
+  }
+}
