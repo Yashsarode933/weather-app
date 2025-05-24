@@ -133,24 +133,24 @@ function setWeatherBackground(condition) {
 
   switch (condition.toLowerCase()) {
     case 'clear':
-      imageUrl = "images/sunny.jpg";
+      imageUrl = "./images/sunny.jpg";
       break;
     case 'clouds':
-      imageUrl = "images/cloudy.jpg";
+      imageUrl = "./images/cloudy.jpg";
       break;
     case 'rain':
     case 'drizzle':
-      imageUrl = "images/rainy.jpg";
+      imageUrl = "./images/rainy.jpg";
       break;
     case 'thunderstorm':
-      imageUrl = "images/thunderstorm.jpeg";
+      imageUrl = "./images/thunderstorm.jpg";
       break;
     case 'snow':
-      imageUrl = "images/snow.jpeg";
+      imageUrl = "./images/snow.jpg";
       break;
     case 'mist':
     case 'fog':
-      imageUrl = "images/fog.jpeg";
+      imageUrl = "./images/fog.jpg";
       break;
     default:
       imageUrl = 'https://source.unsplash.com/1600x900/?weather';
